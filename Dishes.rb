@@ -38,7 +38,7 @@ class Dishwasher
 	def empty
 		dishes = @silverware_rack + @top_rack + @bottom_rack
 		dishes.each do |dish|
-			put_away(dish)
+			dish.put_away
 		end
 		
 		@bottom_rack = []
